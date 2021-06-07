@@ -2,3 +2,4 @@
 /posts/node_modules/
 /client/node_modules/
 /.idea/
+/event-bus/node_modules/
