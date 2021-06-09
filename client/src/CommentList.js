@@ -1,10 +1,11 @@
 import React from "react";
 
+const CommentList = ({ comments }) => {
+  const renderedComments = comments.map((comment) => {
+    return <li key={comment.id}>{comment.content}</li>;
+  });
 
-export default ({ comments }) => {
-    const renderedComments = comments.map(comment => {
-        return <li key={comment.id}>{comment.content}</li>;
-    });
-
-    return <ul>{renderedComments}</ul>
+  return <ul>{renderedComments}</ul>;
 };
+
+export default CommentList;
